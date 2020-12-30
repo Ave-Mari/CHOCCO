@@ -1,0 +1,94 @@
+.radio {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    // margin-top: rem(12px);
+    margin-right: rem(10px);
+
+    &--checkbox {
+        .radio__visible {
+            border-radius: rem(6px);
+
+        &:before {
+            background: url("./../img/icons/checkmark.svg") center center no-repeat;
+        }
+       }        
+    }
+}
+
+.radio__elem {
+    display: none;
+
+    &:checked ~ .radio__visible {
+        &:before {
+            display: block;
+        }
+    }
+}
+
+.radio__visible {
+    content: "";
+    width: rem(25px);
+    height: rem(25px);
+    background: #ffffff;
+    border-radius: rem(50px);
+    position: relative;
+    margin-right: rem(10px);
+    margin-bottom: rem(14px);
+
+     &:before {
+        content: "";   
+        display: none;
+        width: rem(13px);
+        height: rem(13px);
+        border-radius: rem(50px);        
+        background: #365A49;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+     }
+
+}
+
+.radio__title {
+    padding-top: rem(3px);
+    font-size: rem(18px);
+    font-weight: 400;
+    color: #497870;
+    margin-right: rem(10px);
+}
+
+.form__btns {
+    // margin-top: rem(20px);
+}
+
+
+.btn-submit {
+    cursor: pointer;
+    border: none;
+    background: $darkGreen; 
+    color: #ffffff;
+    font-weight: 800;
+
+    &:hover {
+        color: $darkGreen;
+        background: #ffffff;
+    }
+} 
+
+.btn-reset {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-weight: 400;
+    color: #497870;
+
+    &:hover {
+        color: $darkGreen;
+        background: #ffffff;
+    }
+
+
+
+}

@@ -1,0 +1,31 @@
+.btn {
+    font-size: rem(19px);
+    font-weight: bold;
+    padding: rem(18px) rem(35px);
+    border-radius: rem(100px);
+    line-height: 1;
+
+    &--theme--white {
+        background: #ffffff;
+        color: $darkGreen;
+    }
+    &:hover {
+        background:$darkGreen;
+        color: #ffffff;
+    }    
+    margin-bottom: rem(70px);
+}
+
+
+
+
+
+// .btn--theme--white {
+//     color: $darkGreen;
+//     font-family: Alegreya Sans;
+//     font-size: rem(16px);
+//     font-weight: 600;
+//     background: #ffffff;
+//     padding: rem(24px) rem(35px) rem(24px) rem(35px);
+//     border-radius: rem(30px);
+// }

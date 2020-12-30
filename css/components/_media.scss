@@ -1,0 +1,520 @@
+@function rem($px) {
+    @return $px / $baseFontSize + 0rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+    
+    .maincontent {
+        font-size: $baseFontSize - 1px;
+        
+    }
+
+    
+    .container {
+        width: 90%;        
+        margin: 0 auto;
+        max-width: 768px;
+    }
+
+    .fixed {
+        display: none;
+    }
+        
+    
+    .menu {
+        display: none;
+    }
+
+    .features {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+        margin-bottom: 4.833333rem;
+    }
+
+    .hamburger {
+        
+        display: block !important;
+        position: fixed;
+        opacity: 1;
+    }
+
+    .hero {
+        
+        background: url("./../img/bg-leaf.png") right 8% no-repeat;        
+        background-color: #61c4d9; 
+
+        &::before {
+        content: url("./../img/chocco-tablet.png");
+        top: 15%;
+        left: 28%;
+        position: absolute;
+        }
+        
+        &::after {
+            content: none;
+        }
+    } 
+
+
+    .hero__title-section {
+        padding-top: 60%;
+        margin: 0 auto;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .hero__main-title {
+        text-align: center;
+        
+    }   
+
+    .hero__title-desc {
+        text-align: center;
+        width: 42%;
+        margin-bottom: 35px;
+    }
+
+    .btn {
+        margin-top: 0;
+        
+    }
+
+    
+    .headline__title {
+        font-size: 48px;
+    }
+
+    .headline__desc {
+        font-size: 18px;
+        width: 60%;
+    }
+
+    .benefits__item {
+
+        &:before {
+            content: none;
+        }
+    }
+    
+
+    .benefit__title {
+        font-size: 27px;
+    }
+
+    .benefits__screen {
+        background: url("./../img/leaf-benefits-sec.png") left 12% no-repeat;
+        
+
+        &:before {
+        content: url("./../img/berry-benefits-sec.png");
+        position: absolute;
+        bottom: rem(-768px); 
+        height: 100vh;
+        left: 0;
+        bottom: -1790px;
+    }
+    }
+
+    .benefit__icon-wrapper {
+        margin: 0 auto;
+        width: 124px;
+        height: 124px;
+        position: relative;
+        background-color: #F2F5F4;
+        border-radius: 50%;    
+        margin-bottom: 32px;
+        overflow: hidden;
+    }
+
+    
+    .reviews__screen {
+        background: url("./../img/berry-review-sec.png") right 3% no-repeat;
+    }
+
+    .reviews__display {        
+        padding: 0;
+        
+    }
+
+    .reviews__display-inner{
+        flex-direction: column;  
+        align-items: center;
+    }
+    
+
+    .reviews__avatar-img {
+        display: block;
+        object-fit: cover;
+        width: 131px;
+        height: 132px;
+        padding-top: 52px;
+        padding-bottom: 30px;
+    }
+
+
+
+    .reviews__content {
+        margin: 0 8px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .reviews__title {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .reviews__text {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .reviews__author {
+        margin-bottom: 25px;
+    }
+
+
+
+
+    .reviews__switcher {
+        padding-left: 0;
+    }
+
+
+
+    .order {
+        height: 960px;
+
+        &:before {
+            top: 600%;
+            right: 0;
+            position: absolute;
+        }
+
+
+        &::after {
+            content: none;
+        }
+    }
+
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__col {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .form__input--textarea {
+        width: 100%;
+    }
+
+    .form__controls {
+        margin-top: 5px;
+    }
+
+    .form__btns {
+        margin: 0 auto;
+        padding-top: 18px;
+    }
+    
+    }   
+
+    /////SLIDER-SCREEN
+
+    // .section {
+    //     height: 100% !important;
+    // }
+
+    .slider-screen {
+        &::after {
+        right: 0 !important;
+        top: 40%;
+        position: absolute;
+        }
+
+    }
+
+    .slider__wrapper {
+        padding-bottom: 40px;
+    }
+
+    .slider__list {
+        overflow: hidden !important;
+    }
+    
+    .slider__item {     
+        display: flex;   
+        flex-direction: column;
+        overflow: hidden;
+        width: 770px !important;
+
+}
+   
+
+    .slider__control {
+        display: none !important;
+    }
+
+    
+
+    .slider__left {
+        padding-left: 30px;
+    }
+    .slider__left {
+        align-items: center;
+        width: 50%;
+        margin-left: 17%;
+    }
+
+    .slider__right {    
+        display: flex;
+        width: 55%;
+        margin-left: 10%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        // width: 55%; !!!
+    }
+
+    .slider__product-name {
+        margin-top: 0;
+        width: 100% !important;
+        
+    }
+    .slider__product-desc {
+        padding: 0;
+        margin: 0;
+        width: 100% !important;
+    }
+
+    .slider__product-char-col {
+        text-align: left;
+    }
+
+    .arrow {        
+        margin-top: 25%;
+        left: 15% !important;
+        position: absolute;
+    
+        &:last-child {
+            left: 83% !important;
+            
+        }
+    
+    }
+
+    .btn-slider {
+        // margin-top: 17px !important;
+        height: 20px;
+    }
+
+    ////TEAM SCREEN
+
+    .team--version--desktop {
+        display: none !important;
+    }
+
+    .team--version--mobile {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .team__item {
+        margin-bottom: 20px;
+    }
+
+    .team__content {
+        position: static !important;
+    }
+       
+    
+    
+    .team__content-block {    
+        height: 380px !important;
+        
+    }
+
+    .team__title {
+        text-align: center;
+    }      
+    
+    
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+    body {
+
+
+    // .hamburger {
+    //     display: block;
+    //     position: fixed;
+    //     opacity: none;
+    //     }
+    
+    .hero {
+        height: 800px;
+        background: url("./../img/bg-leaf.png") right 8% no-repeat; 
+        background-size: 308px 400px !important;     
+        background-color: #61c4d9; 
+
+        &::before {
+            content: none;
+            }
+        
+        &::after {
+            content: none;
+        }
+    } 
+
+    .hero__main-title {
+
+        &::before {
+            content: url("./../img/chocco-phone.png");
+            top: 7%;
+            left: 12%;
+            position: absolute;
+            }
+    }
+
+    
+    .section__title {
+        // margin-top: 15% !important;
+    }
+
+    .headline__desc {        
+        padding: 0 !important;
+        margin: 0 auto;
+    }
+
+    .benefits {
+        flex-direction: column;
+        // margin-top: 50px;
+    }
+
+    .benefit__icon-wrapper {
+        margin-right: 10px;
+    }
+
+
+    .benefits__screen {
+        background: none !important;
+    
+        &:before {
+            content: none !important;
+        }
+    }
+
+    .benefits__item {
+        display: flex;
+
+        &:before {
+            content: none;
+        }
+    }
+
+    .benefit__desc {
+        width: 300px !important;
+        width: 90%;
+        padding-left: 12px;
+        text-align: justify;
+    }
+
+    .order {
+
+        &::before {
+            content: url(./../img/berry-tablet.png);
+            top: 379%;
+            right: 0;
+            position: absolute;
+        }
+    }
+
+
+
+    .form__col {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+
+    .form__controls {
+       justify-content: center;
+    }
+}
+
+
+
+
+/////SLIDER-SCREEN
+
+
+.slider__wrapper {
+    // margin-top: 70px !important;
+}
+
+.slider-screen {
+    &::after {
+        content: none !important;
+    }
+
+    height: 100%;
+}
+
+
+.slider__item {
+    // width: 90% !important;
+    flex-direction: column;
+}
+
+
+.slider__left {
+    margin-left: 3%;
+    width: 39%;
+}
+
+.slider__right {
+    margin-left: -5%;
+    width: 46%;
+
+}
+
+.slider__product-name {
+    width: 60% !important;
+    text-align: center;
+    
+}
+
+.slider__product-desc {
+    width: 70% !important;
+}
+
+
+.bx-wrapper .bx-controls-direction a {
+
+    top: 25%;
+}
+
+
+
+}

@@ -1,0 +1,38 @@
+.order {
+    background: url("./../img/raspberry-bg.png") 100% 100% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: rem(650px);
+
+                        &:before {
+                            content: url("./../img/berry-order-2.png");
+                            top: -22%;
+                            right: 0;
+                            position: absolute;
+                        }
+
+    // &:after {
+    //     content: url("./../img/berry-order.png");
+    //     top: 368%;
+    //     left: 15%;
+    //     position: absolute;
+    // }
+
+                &:after {
+                    content: url("./../img/leaf-order.png");
+                    top: 49%;
+                    left: 86%;
+                    position: absolute;
+                }
+}
+
+.order-title {
+    color: $darkGreen;
+    margin-bottom: rem(44px);
+    padding-top: rem(62px);
+    margin-top: 0px;
+}
+
+.order__wrapper {
+    
+}

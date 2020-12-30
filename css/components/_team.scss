@@ -1,0 +1,102 @@
+.team-section {   
+    height: 100vh;
+
+    &:before {
+    content: url("./../img/berry-team.png");
+    right: 0;
+    top: -4%;
+    position: absolute;
+    }
+
+    display: flex;
+    align-items: center;
+}
+
+
+// &::after {
+//     content: url("./../img/leaf-slider.png");
+//     right: 0;
+//     top: 70%;
+//     position: absolute;
+// }
+
+
+
+.team {
+    display: flex;
+    padding-left: 0px;
+
+}
+
+.section-team-title {
+    margin-bottom: rem(53px);
+    // margin-top: rem(67px);
+    
+}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: rem(20px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.team-card__img {
+    margin-bottom: rem(21px);
+}
+
+.team__title {
+    font-size: rem(21px);
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    background: none;
+    margin-bottom: rem(9px);
+    cursor: pointer;
+    padding: 0;
+}
+
+.team__content {
+    text-align: center;
+    transition: height .3s;
+}
+
+.team__content__position {
+    font-size: rem(18px);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: rem(4px);
+}
+
+.team__content__role {
+    font-size: rem(18px);
+    font-weight: 300;
+    color: #666666;
+    margin-top: 0;
+}
+
+.team--version--mobile {
+    display: none;
+    flex-direction: column;
+}
+
+.team__content {
+    box-sizing: border-box;
+    overflow: hidden;
+    top: 100%;
+    height: 0;
+    position: absolute;
+    width: 222px;
+
+}
+
+.team__content-block {    
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    
+}

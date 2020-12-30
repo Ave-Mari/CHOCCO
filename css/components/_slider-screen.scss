@@ -1,0 +1,173 @@
+
+.slider-screen {
+    
+    background-color: #F8FAF9;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+
+    &::after {
+        content: url("./../img/leaf-slider.png");
+        right: 0;
+        top: 60%;
+        position: absolute;
+    }
+
+    
+}
+
+// .slider__wrapper {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: rem(35px);
+//     overflow: hidden;
+// }
+
+.slider__control {
+    display: flex;
+    margin-bottom: rem(38px);
+    // position: relative;
+}
+
+.arrow {
+    margin-top: 25%;
+    left: -10%;
+    position: absolute;
+
+    &:last-child {
+        left: 105%;
+        
+    }
+
+}
+
+.slider__list {
+
+    // margin-top: 67px;
+    // display: flex;
+    
+    // position: relative;
+
+    // right: 1500px;
+
+}
+
+.slider__item {
+    display: flex;
+    margin: 0 auto;
+    flex-shrink: 0;
+
+    // width: 1100px;
+}
+
+
+.slider__right {
+    width: 70%;
+    margin-left: 5%;
+}
+
+.slider__left {
+    margin-right: rem(52px);
+
+    //  &:first-child {
+    //      width: 10%;
+    // }
+
+}
+
+
+
+.slider__product-name {
+    font-size: rem(36px);
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 67%;
+    margin-bottom: rem(16px);
+  
+}
+
+.slider-img {
+    width: 100%;
+    
+}
+
+.slider__product-char {
+    display: flex;
+    margin-bottom: rem(25px);
+}
+
+.slider__product-char-col {
+    margin-right: rem(54px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+.slider__product-desc {
+    font-size: rem(20px);
+    color: #666666;
+    margin-bottom: rem(20px);
+    width: 70%;
+
+    &:last-child {
+        width: 40%;
+        color: red;
+    }
+}  
+
+.slider__product__order {
+    display: flex;
+}
+
+.slider-price {
+    font-size: rem(60px);
+    font-weight: 300;
+    color: #497870;
+    margin-right: rem(40px);
+    padding-top: rem(14px);
+}
+
+
+
+.char-title {
+    font-size: rem(18px);
+    font-weight: 400;
+    margin-bottom: rem(4px) !important;
+    
+}
+
+.char-value {
+    font-size: rem(18px);
+    font-weight: 700;
+    margin: 0 !important;
+}
+
+
+
+///JQUERY 
+
+.bx-prev {
+    position: absolute !important;
+    background: url('./../img/arrow-left.png') no-repeat !important;  
+}
+
+.bx-next {
+    background: url('./../img/arrow-right.png') no-repeat !important; 
+}
+
+.bx-wrapper {
+    border: none;
+    background: none;
+    height: 100%;
+    width: 100%;
+    box-shadow: none;
+}
+
+
+.bx-viewport  {
+    height: 100% !important;
+}

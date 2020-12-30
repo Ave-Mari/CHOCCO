@@ -1,0 +1,95 @@
+.benefits__screen {
+    background: url("./../img/leaf-benefits-sec.png") left 44% no-repeat;
+
+    &:before {
+        content: url("./../img/berry-benefits-sec.png");
+        position: absolute;
+        bottom: rem(-768px);
+        left: 0;
+    }
+    height: 100vh;
+    // padding-top: rem(109px);
+    display: flex;
+    align-items: center;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    text-align: center;
+    padding-left: rem(0px);
+    position: relative;
+}
+
+
+
+.benefits__item {
+    flex: 1;
+
+    margin-right: 4%;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    position: relative;
+
+    &:before {
+        content: url("./../img/separator.png");
+        position: absolute;
+        top: rem(50px); 
+        right: 0;
+        transform: translateX(96%);
+
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.benefit__icon-wrapper {
+    margin: 0 auto;
+    width: rem(126px);
+    height: rem(126px);
+    position: relative;
+    background-color: #F2F5F4;
+    border-radius: 50%;    
+    margin-bottom: rem(32px);
+    overflow: hidden;
+}
+
+.benefit__icon-image {
+    height: rem(69px);
+    width: rem(75px);
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: black;
+    
+    
+}
+
+.benefit__title {
+    font-size: rem(27px);
+    font-weight: 700;
+    margin-bottom: rem(18px);
+    margin-top: 0;
+}
+
+
+.benefit__desc {
+    font-size: rem(18px);
+    font-weight: 300;
+    line-height: 21,rem(6px);
+}
+

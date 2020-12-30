@@ -1,0 +1,136 @@
+.reviews__screen {
+    background: url("./../img/berry-review-sec.png") 90% 14% no-repeat,
+    url("./../img/berry-review-sec-2.png") left 76% no-repeat,
+    url("./../img/leaf-review.png") left 81% no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.reviews__screen__title {
+    // margin-top: rem(58px);
+}
+
+.reviews__display {
+    background: url("./../img/berry-review.png") right 15% no-repeat;
+    background-color: #F8FAF9;  
+    padding: rem(42px) rem(142px) rem(42px) rem(42px);
+    position: relative;
+    overflow: hidden;
+    min-height: 280px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: rem(83px);
+        height: rem(83px);
+        position: absolute;
+        background: #ffffff;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: rem(-55px);
+    }
+    
+}
+
+.reviews__display-inner{
+    display: flex;    
+}
+
+.reviews__content {
+    margin-left: rem(18px);
+    flex: 1;
+}
+
+.reviews__title {
+    font-size: rem(30px);
+    // margin-top: rem(16px);
+    margin-bottom: rem(22px);
+    font-weight: 700;
+    line-height: rem(32px);
+
+}
+
+.reviews__text {
+    font-size: rem(18px);
+    font-weight: 400;
+    margin-bottom: rem(37px);
+    
+}
+
+.reviews__author {
+    font-size: rem(18px);
+    font-weight: bold;
+    font-weight: 500;
+}
+
+.reviews__switcher {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.reviews__switcher-item {
+    width: rem(74px);
+    height: rem(74px);
+    // border: rem(6px) solid transparent;
+    overflow: hidden;
+    position: relative;
+
+    
+
+    &:hover {
+        border: rem(4px) solid #256145;
+        
+    }
+
+  
+
+}
+
+// .reviews__switcher-item.active {
+    
+// }
+
+.avatar-btn__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    display: block;
+
+   
+}
+
+.reviews__avatar-img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+
+    &:active {
+        border-color: #365A49;
+        border: rem(9px) solid transparent;
+    }
+}
+
+.reviews__display__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+
+
+.reviews__display__item.active {
+    position: static;
+    opacity: 1;
+}

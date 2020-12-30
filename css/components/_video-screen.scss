@@ -1,0 +1,128 @@
+.player-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background: #F8FAF9;
+    height: 100vh;
+}
+
+.player-section__title {
+    margin-top: rem(62px);
+    margin-bottom: rem(30px);
+}
+
+
+
+.player__start {
+    border: none;
+    background: none;
+    cursor: pointer;    
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.player__start__wrapper {
+    margin-right: 1%;
+    width: rem(30px);
+
+}
+
+
+
+
+.player__start__icon {
+    max-width: 100%;
+    max-height: 100%;
+    fill: #626262;
+
+    &:hover {
+        fill: #61C4D9;
+    }
+}
+
+.player__start_big {
+    display: block;
+    border: none;
+    background: none;
+    position: absolute;
+    transform: translate(0%, -115%);
+    fill: #ffff;
+    cursor: pointer;
+
+    &:hover {
+        fill: #61C4D9;
+    }
+}
+
+.player__start_big_icon {
+    width: rem(75px);
+    height: rem(109px);
+}
+
+.player__wrapper {
+    position: relative;
+
+    
+
+    ////
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player__controls {
+    position: absolute;
+    bottom: 0;
+    background: #404040;
+    height: 35px;
+    width: 660px;
+    padding: 0 rem(20px) 0 rem(10px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: auto;
+
+}
+
+.player__playback {
+    display: flex;
+    align-items: center;
+    flex: 1;
+   
+}
+
+.player__playback-button {
+    width: 100%;
+    height: rem(6px);
+    position: relative;
+}
+
+.player__playback-current {
+    width: 0;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+    &:before {
+        content: '';
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        display: flex;
+        background-color: #61C4D9;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transform: translate(-83%, -40%);
+        cursor: pointer;
+    }
+}
+
+.player__duration {
+    margin-left: rem(6px);
+}
